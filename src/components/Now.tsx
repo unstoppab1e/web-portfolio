@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function Now() {
   return (
-    <div id='now' className="h-full pt-16 leading-tight">
+    <div id='now' className="h-full pt-16 pb-2 leading-tight">
       <h3 className='font-inter font-title italic text-xl text-black dark:text-white pt-4'>
         Now
       </h3>
-      <div className="flex-col font-dmmono">
-        <p>
+      <div className="flex-col gap-4 font-dmmono">
+        <p className='pb-4 line-mono font-normal text-[#4f5352]'>
           Last Updated: August 21st
         </p>
         <div className='leading-loose'>
