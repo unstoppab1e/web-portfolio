@@ -3,7 +3,7 @@ import DarkModeButton from "./DarkModeButton";
 
 export default function Navbar() {
   return (
-    <div className='max-w-2xl pt-10'>
+    <div id='top' className='max-w-2xl pt-10'>
       <div className='flex justify-between h-16'>
         <div className='flex justify-between w-full'>
           <div className='flex items-center'>

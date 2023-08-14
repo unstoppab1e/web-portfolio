@@ -1,11 +1,38 @@
 const Description = () => {
+  function scrollDown() {
+    const section = document.getElementById('stack');
+    if(section){
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+  function scrollProject() {
+    const section = document.getElementById('projects');
+    if(section){
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+  function scrollNow() {
+    const section = document.getElementById('now');
+    if(section){
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
   return (
     <div className='flex-row text-base font-normal tracking-normal leading-loose mb-5 text-left'>
       <p className='mt-3'>
         Front-end developer
       </p>
       <p className='font-normal tracking-normal leading-loose mb-3 mt-5 text-left'>
-        I design and build website templates so you can launch your website in minutes. Check out my latest <a href='./#project' className='underline'>projects</a>, <a href='./templates' className='underline'>templates</a> and what I’m up to right <a href='./#now' className='underline'>now</a>.
+        I design and build website templates so you can launch your website in minutes. Check out my latest <a onClick={scrollProject} className='underline'>projects</a>, <a onClick={scrollDown} className='underline'>stacks</a> and what I’m up to right <a onClick={scrollNow} className='underline'>now</a>.
       </p>
       <div className='flex gap-16'>
         <div className='flex items-center justify-center gap-2 min-h-min min-w-min overflow-hidden p-0 relative'>

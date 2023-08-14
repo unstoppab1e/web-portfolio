@@ -1,9 +1,13 @@
 "use client";
 import BreakLines from "@/components/BreakLines";
+import Contact from "@/components/Contact";
 import Description from "@/components/Description";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Now from "@/components/Now";
 import Overview from "@/components/Overview";
+import Projects from "@/components/Projects";
+import Stack from "@/components/Stack";
 import { DM_Mono } from "next/font/google";
 
 const mono = DM_Mono({
@@ -20,6 +24,13 @@ export default function Home() {
       <div className={`${mono.variable} dark:bg-[#111215] dark:text-[#A1A1AA] h-full selection:bg-gray-50 dark:selection:bg-gray-800`}>
         <Description />
         <Overview />
+        <Projects />
+        <BreakLines />
+        <Now />
+        <BreakLines />
+        <Stack />
+        <BreakLines />
+        <Contact />
         <BreakLines />
       </div>
       <Footer />
