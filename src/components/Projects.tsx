@@ -1,5 +1,11 @@
 import React from 'react'
-import BreakLines from './BreakLines';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ['700', '900'],
+  variable: '--inter',
+})
 
 const Projects = () => {
 
@@ -33,7 +39,7 @@ const Projects = () => {
   return (
     <><div id='projects' className='pt-12'>
           <div>
-              <h3 className='font-interbold font-black italic text-xl text-black dark:text-white pt-4'>
+              <h3 className='font-inter font-title italic text-xl text-black dark:text-white pt-4'>
                   Projects
               </h3>
           </div>
@@ -49,7 +55,7 @@ const Projects = () => {
                                   <p className='text-xs font-normal dark:text-white text '>{project.year}</p>
                               </div>
                           </div>
-                          <div>{project.description}</div>
+                          <div className='font-dmmono'>{project.description}</div>
                           <div className='text-sm font-mono text-[#46a4f6]'>
                               <a href={project.link} className='flex items-center gap-2'>
                                   {project.link}

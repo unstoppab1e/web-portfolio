@@ -9,8 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        custom: '1.25',
+        mono: '1.75',
+      },
       fontFamily: {
-        dmmono: ['var(--dmmono)'],
+        dmmono: ['DM Mono', 'monospace'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        title: '900',
+        normal: '400',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Overview = () => {
   return (
-    <div className='pt-6 text-base'>
+    <div className='pt-6 font-dmmono text-base'>
         <div className="flex flex-col flex-initial gap-2">
             <a href='./#projects' className='flex gap-2 align-center font-normal cursor-pointer'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

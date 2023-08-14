@@ -27,7 +27,7 @@ const Description = () => {
     }
   }
   return (
-    <div className='flex-row text-base font-normal tracking-normal leading-loose mb-5 text-left'>
+    <div className='font-dmmono line-mono flex-row text-mono font-normal tracking-normal mb-5 text-left'>
       <p className='mt-3'>
         Front-end developer
       </p>
