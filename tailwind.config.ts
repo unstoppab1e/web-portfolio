@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       lineHeight: {
         custom: '1.25',
+        bold: '1.4',
         mono: '1.75',
       },
       fontFamily: {
@@ -19,6 +20,7 @@ const config: Config = {
       },
       fontWeight: {
         title: '900',
+        bold: '700',
         normal: '400',
       },
       backgroundImage: {
