@@ -1,4 +1,8 @@
-export default function Stack() {
+interface StackProps {
+  stackRef: React.RefObject<HTMLDivElement>;
+}
+
+const Stack: React.FC<StackProps> = ({stackRef}) => {
 
   const stack = [
     {
@@ -43,32 +47,32 @@ export default function Stack() {
     }
   ]
   return (
-    <div id="stack" className="flex flex-col justify-center pt-16 pb-8 gap-4">
+    <div id="stack" ref={stackRef} className="flex flex-col justify-center pt-16 pb-8 gap-4">
       <h3 className='font-inter font-title italic text-xl text-black dark:text-white pt-4'>
         Stack
       </h3>
       <div className="grid grid-cols-2 gap-2.5">
         {stack && stack.map((item, index) => {
           return (
-            <>
-              <div className="flex w-full gap-3 my-2 mr-4 ml-2" key={index}>
-                <div className="flex p-2 bg-white item-center rounded">
-                  <div dangerouslySetInnerHTML={{ __html: item.logo }} />
-                </div>
-                <div className="flex flex-col">
-                  <h3 className="font-inter font-bold leading-bold text-dark dark:text-white">
-                    {item.name}
-                  </h3>
-                  <p className="font-dmmono font-normal text-sm ">
-                    {item.type}
-                  </p>
-                  
-                </div>
+            <div className="flex w-full gap-3 my-2 mr-4 ml-2" key={index}>
+              <div className="flex p-2 bg-white item-center rounded">
+                <div dangerouslySetInnerHTML={{ __html: item.logo }} />
               </div>
-            </>
+              <div className="flex flex-col">
+                <h3 className="font-inter font-bold leading-bold text-dark dark:text-white">
+                  {item.name}
+                </h3>
+                <p className="font-dmmono font-normal text-sm ">
+                  {item.type}
+                </p>
+                
+              </div>
+            </div>
             )
           })}
       </div>
     </div>
   )
 }
+
+export default Stack;

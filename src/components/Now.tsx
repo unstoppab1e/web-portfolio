@@ -1,8 +1,11 @@
 import React from 'react'
 
-export default function Now() {
+interface NowProps {
+  nowRef: React.RefObject<HTMLDivElement>;
+}
+const Now: React.FC<NowProps> = ({nowRef}) => {
   return (
-    <div id='now' className="h-full pt-16 pb-2 leading-tight">
+    <div ref={nowRef} id='now' className="h-full pt-16 pb-2 leading-tight">
       <h3 className='font-inter font-title italic text-xl text-black dark:text-white pt-4'>
         Now
       </h3>
@@ -26,3 +29,5 @@ export default function Now() {
     </div>
   )
 }
+
+export default Now;
