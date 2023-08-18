@@ -1,3 +1,5 @@
+import { BlinkingLamp } from "./BlinkingLamp";
+
 const Description = () => {
   function scrollDown() {
     const section = document.getElementById('stack');
@@ -32,7 +34,7 @@ const Description = () => {
         Front-end developer
       </p>
       <p className='font-normal tracking-normal leading-loose mb-3 mt-5 text-left'>
-        I design and build website templates so you can launch your website in minutes. Check out my latest <a onClick={scrollProject} className='underline'>projects</a>, <a onClick={scrollDown} className='underline'>stacks</a> and what I’m up to right <a onClick={scrollNow} className='underline'>now</a>.
+        I design and build website templates so you can launch your website in minutes. Check out my latest <a onClick={scrollProject} className='underline cursor-pointer'>projects</a>, <a onClick={scrollDown} className='underline cursor-pointer'>stacks</a> and what I’m up to right <a onClick={scrollNow} className='underline cursor-pointer'>now</a>.
       </p>
       <div className='flex gap-16'>
         <div className='flex items-center justify-center gap-2 min-h-min min-w-min overflow-hidden p-0 relative'>
@@ -47,7 +49,8 @@ const Description = () => {
             <p className=''>Seoul, South Korea</p>
           </div>
         </div>
-        <div className=''>
+        <div className='flex items-center gap-2'>
+          <BlinkingLamp />
           <div className=''>
             Available for work
           </div>

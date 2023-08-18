@@ -15,18 +15,18 @@ export default function Contact() {
     },
     {
       name: 'Github',
-      linkName: 'unstoppab1e',
+      linkName: '@unstoppab1e',
       link: 'https://github.com/unstoppab1e'
     },
     {
       name: 'Telegram',
-      linkName: '@unstoppab1e',
+      linkName: '@abdirakhymt',
       link: 'https://t.me/abdirakhymt'
     },
     {
       name: 'Twitter',
-      linkName: '@unstoppab1e',
-      link: 'twitter.com/unstoppab1e'
+      linkName: '@abdirakhymt',
+      link: 'https://twitter.com/AbdirakhymT'
     },
     
   ];
@@ -40,7 +40,7 @@ export default function Contact() {
         {contacts && contacts.map((contact, index) => {
           return (
             <>
-              <div key={index} className="flex gap-4 font-dmmono font-normal justify-between items-center">
+              <div key={index} className="flex gap-4 font-dmmono font-normal tracking-normal justify-between items-center">
                 <h5>{contact.name}</h5>
                 <span className="grow border-b border-[#5d5b5b]"></span>
                 <span className='flex items-center gap-2 cursor-pointer text-[#46a4f6]'>

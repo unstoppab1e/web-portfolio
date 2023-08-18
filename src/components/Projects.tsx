@@ -11,28 +11,28 @@ const Projects = () => {
 
     const projects = [
         {
-            name: 'Project 1',
+            name: 'RatingChecker application',
             year: '2023',
-            description: 'This is a project',
-            link: 'https://www.google.com'
+            description: 'The russian language platform for rating and reviewing online courses',
+            link: 'https://github.com/unstoppab1e/rating-checker'
         },
         {
             name: 'My-Unsplash',
             year: '2023',
-            description: 'This is a project',
-            link: 'https://www.google.com'
+            description: 'Image sharing platform',
+            link: 'https://github.com/unstoppab1e/my-unsplash'
         },
         {
-            name: 'Project 3',
+            name: 'Semantic-based text generation using language model',
+            year: '2023',
+            description: 'Natural language processing project where we generate text based on the input text',
+            link: 'https://github.com/unstoppab1e/NLP'
+        },
+        {
+            name: 'Wordle Game App',
             year: '2022',
-            description: 'This is a project',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Project 4',
-            year: '2021',
-            description: 'This is a project',
-            link: 'https://www.google.com'
+            description: 'Wordle game app for web. You can play it on your browser',
+            link: 'https://github.com/unstoppab1e/wordle'
         },
     ];
 
